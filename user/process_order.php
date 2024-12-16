@@ -6,8 +6,8 @@ use Razorpay\Api\Api;
 
 include "../db_connect.php";
 
-$api_key = 'rzp_test_V8Kwa8NWu7RLyF'; //Your Test Key
-$api_secret = 'DRBFXThnkDDJL5sW8ykQ5wwK'; //Your Test Secret Key
+$api_key = 'your_key'; //Your Test Key
+$api_secret = 'your_secret'; //Your Test Secret Key
 
 // Set transaction details
 $myorder_id = $_GET['order_id'];
