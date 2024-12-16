@@ -41,7 +41,7 @@ echo '<script>
             currency: "' . $order->currency . '",
             name: "BookHub",
             description: "Payment for your order",
-            image: "https://cdn.razorpay.com/logos/GhRQcyean79PqE_medium.png",
+            image: "https://cdn.razorpay.com/logos/G_medium.png",
             order_id: "' . $order_id . '",
             theme:
             {
