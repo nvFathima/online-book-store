@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar button {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-color: #262626;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #e60000;
+    margin-bottom: 10px;
+}
+
+.sidebar button:hover {
+    background-color: #e60000;
+    color: white;
+}
+
+.main-content {
+    margin-left: 200px;
+    flex-grow: 1;
+    padding: 20px;
+    width: calc(100% - 220px);
+}
+
+h1, h2 {
+    color: #d33b33;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.error p, .success p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.error p {
+    color: #e60000;
+}
+
+.success p {
+    color: #28a745;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 98%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #d33b33;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #c32b2b;
+}
+
+.book-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.book-details {
+    flex-grow: 1;
+}
+
+.book-details h3 {
+    margin-top: 0;
+    color: #d33b33;
+}
+
+.book-details p {
+    margin: 5px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.edit-btn, .remove-btn {
+    flex-basis: 48%; /* Adjust this value to control button width */
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.remove-btn {
+    background-color: #e74c3c;
+}
+
+.edit-btn:hover {
+    background-color: #004494;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Styling the toggle container */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #f4f4f4;  /* Lighter background */
+    border-radius: 25px;  /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Swiping button style */
+.toggle-btn {
+    flex: 1;
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #d33b33;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 25px;  /* Match the container rounding */
+}
+
+.toggle-btn.active {
+    background-color: #d33b33;  /* Active button background */
+    color: #fff;
+    border-radius: 25px;  /* Active button matches the overall rounding */
+}
+
+.toggle-btn:hover {
+    background-color: #c32b2b;  /* Slightly darker hover effect */
+    color: #fff;
+}
+
+/* Optional: Ensure the buttons have some spacing */
+.toggle-btn + .toggle-btn {
+    margin-left: 5px;
+}
+
+
+/* Agreement frame styles */
+.agreement-frame {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .agreement-frame p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .checkbox-container label {
+    margin-bottom: 0;
+  }
+
+  .badge {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    position: relative;
+    top: -5px;
+    left: 10px;
+}
+
+.contact-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,264 @@
+/* Base styles and resets */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  background-image: url('../images/banner-03.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.back-home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  color:white; ;
+  font-size: 16px;
+  background-color:#e60000;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #e60000;
+}
+
+.back-home:hover {
+  background-color: #e60000;
+  color: white;
+}
+
+/* Layout */
+.page-wrapper {
+  padding: 100px 0 50px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 680px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-2 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+@media (max-width: 767px) {
+  .col-2 {
+    width: 100%;
+  }
+}
+
+/* Card styles */
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 57px 65px;
+  padding-bottom: 65px;
+}
+
+
+@media (max-width: 767px) {
+  .card-body {
+    padding: 50px 40px;
+  }
+}
+
+/* Form styles */
+.title {
+  font-size: 24px;
+  color: #525252;
+  margin-bottom: 40px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.input-group input {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 16px;
+  color: #555;
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input--style-4 {
+  line-height: 40px;
+  background: #fff;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #666;
+  transition: all 0.4s ease;
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+.input--style-4:focus {
+  border-color: #e60000;
+}
+
+/* Select styles */
+.rs-select2 .select2-container {
+  width: 100% !important;
+}
+
+/* Button styles */
+.p-t-15 {
+  padding-top: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px; /* If not already added */
+}
+
+.btn {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 50px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  background-color: #d33b33;
+  border: none;
+  border-radius: 5px;
+  width: 90%; /* adjust the width as needed */
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #c32b2b;
+}
+
+.btn--radius-2 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Agreement frame styles */
+.agreement-frame {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.agreement-frame p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.checkbox-container label {
+  margin-bottom: 0;
+}
+
+/* Additional styles */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+/* Password validation message styles */
+#message {
+  display: none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15); /* Match your card shadow */
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+#message h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #525252;
+}
+
+#message p {
+  padding: 10px 0 10px 35px; /* Adjusted padding for better alignment */
+  font-size: 14px;
+  position: relative;
+}
+
+/* Green checkmark for valid input */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: absolute;
+  left: 0;
+  content: "✔"; /* Check mark */
+  font-size: 18px;
+  line-height: 18px;
+}
+
+/* Red cross mark for invalid input */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: absolute;
+  left: 0;
+  content: "✖"; /* Cross mark */
+  font-size: 18px;
+  line-height: 18px;
+}

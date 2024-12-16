@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/banner-03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-top{
+    background: #010101;
+    padding: 10px 0px;
+    position:relative;
+}
+
+
+header {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #123;
+    color: white;
+  }
+  
+  .back-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color:white; ;
+    font-size: 16px;
+    background-color:#e60000;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #e60000;
+}
+
+.back-home:hover {
+    background-color: #e60000;
+    color: white;
+}
+/*
+.main-top a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+}*/
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Add some transparency to see the background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-top: 80px; /* Adjust for fixed top frame */
+}
+
+.login-container h1 {
+    color: #d33b33;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #d33b33;
+}
+
+.form-group, .input-group{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label, .input-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input ,.input-group input{
+    width: 93%; /* Changed from 93% to 100% */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group input:focus {
+    border-color: #e60000;
+}
+
+button {
+    background-color: #d33b33;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #c32b2b;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+p a {
+    color: #d33b33;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

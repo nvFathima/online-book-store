@@ -1,0 +1,129 @@
+/* Navigation Bar */
+.nav-ribbon {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+.nav-ribbon a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 20px;
+    padding: 5px 10px; /* Add padding to links for better clickability */
+}
+
+.nav-ribbon a:hover {
+    background-color: #575757;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Download Button in Navigation */
+/*.download-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: auto; 
+    transition: background-color 0.3s ease;
+}
+*/
+.download-btn:hover {
+    background-color: #e74c3c;
+}
+
+/* User Details Container */
+.user-details-container {
+    margin-top: 100px;
+    padding: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th {
+    text-align: left;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    width: 30%;
+    background-color: #444;
+}
+
+table td {
+    padding: 10px;
+    background-color: #2a2a2a;
+    border-bottom: 1px solid #555;
+    color: white;
+}
+
+h1 {
+    color: #ff4d4d;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Hover Effect for Table Rows */
+table td:hover {
+    background-color: #1f1f1f;
+}
+
+/* Remove User Button */
+.remove-user-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.remove-user-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .user-details-container {
+        width: 95%;
+        margin-top: 120px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

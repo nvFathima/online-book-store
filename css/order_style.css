@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar button {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-color: #262626;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #e60000;
+    margin-bottom: 10px;
+    width:100%;
+}
+
+.sidebar button:hover {
+    background-color: #e60000;
+    color: white;
+}
+
+.main-content {
+    margin-left: 200px;
+    flex-grow: 1;
+    padding: 20px;
+    width: calc(100% - 220px);
+}
+
+h2 {
+    color: #d33b33;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.book-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.book-details h3 {
+    margin-top: 0;
+    color: #d33b33;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.edit-btn {
+    flex-basis: 48%;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.remove-btn {
+    background-color: #e74c3c;
+}
+
+.edit-btn:hover {
+    background-color: #004494;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #d33b33;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 25px;
+}
+
+.toggle-btn.active {
+    background-color: #d33b33;
+    color: white;
+}
+
+.toggle-btn:hover {
+    background-color: #c32b2b;
+    color: white;
+}
+
+#download-pdf {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+}
+#download-pdf:hover {
+    background-color: #d35400;
+}

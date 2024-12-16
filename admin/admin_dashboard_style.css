@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 220px;
+    background-color: #333;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-menu {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    list-style-type: none; /* Ensure list items do not have bullets */
+    width: 100%;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-menu a:hover {
+    background-color: #575757;
+}
+
+.sidebar-menu a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.sidebar-menu a.active {
+    background-color: #d33b33;
+}
+
+.sidebar button.logout-btn {
+    width: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #e60000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar button.logout-btn:hover {
+    background-color: #d33b33;
+    color: white;
+}
+
+.main-content {
+    margin-left: 250px;
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #333;
+}
+
+.overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.box h2 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 28px;
+    margin: 0;
+    color: white;
+}
+
+.box small {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.downloads {
+    background-color: #ff6384;
+}
+
+.purchases {
+    background-color: #ffce56;
+}
+
+.customers {
+    background-color: #36a2eb;
+}
+
+.chart-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.chart-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    text-align: center;
+}
+
+canvas {
+    max-width: 100%;
+    height: 300px;
+}
